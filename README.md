@@ -17,6 +17,7 @@
 - Unit testing
 - Custom labels in repository
 - Follow guidelines
+- Gitflow
 
 ## Requeriments
 Mandatory
