@@ -20,3 +20,5 @@ jest.mock('axios', () => ({
 jest.mock('./src/providers', () => ({
   get: jest.fn(() => Promise.resolve({data: mockData})),
 }));
+
+jest.mock('@react-native-async-storage/async-storage', () => ({}));

@@ -1,3 +1,5 @@
+import {Platform} from 'react-native';
+
 // NUMBERS FOR INCOME
 export const MIN_INCOME = 1000;
 export const MAX_INCOME = 9999999;
@@ -21,3 +23,7 @@ export const MONTHS = [
   'Noviembre',
   'Diciembre',
 ];
+
+// PLATFORMS
+export const IS_ANDROID = Platform.OS === 'android';
+export const IS_IOS = Platform.OS === 'ios';

@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+import {IS_ANDROID} from '../../constants';
 import {resPixel, resText} from '../../utils';
 
 export const BanksStyles = StyleSheet.create({
@@ -8,43 +9,40 @@ export const BanksStyles = StyleSheet.create({
     flex: 1,
     paddingLeft: resPixel(20),
     paddingRight: resPixel(20),
-    paddingBottom: resPixel(20),
     backgroundColor: Colors.white,
   },
   welcomeText: {
-    fontWeight: '900',
-    fontStyle: 'normal',
+    color: Colors.black,
     fontFamily: 'Avenir',
-    fontSize: resText(18),
-    lineHeight: resText(27),
+    fontWeight: IS_ANDROID ? '900' : '800',
+    fontSize: IS_ANDROID ? resText(20) : resText(18),
+    lineHeight: IS_ANDROID ? resText(30) : resText(27),
   },
   welcomeName: {
-    fontStyle: 'normal',
+    color: Colors.black,
     fontFamily: 'Avenir',
-    fontSize: resText(14),
     marginTop: resPixel(-8),
-    lineHeight: resText(27),
+    fontSize: IS_ANDROID ? resText(16) : resText(14),
+    lineHeight: IS_ANDROID ? resText(30) : resText(27),
   },
   sectionOne: {
     color: '#9B9898',
-    fontWeight: '900',
-    fontStyle: 'normal',
     fontFamily: 'Avenir',
-    fontSize: resText(12),
     marginTop: resPixel(10),
     lineHeight: resText(19),
+    fontWeight: IS_ANDROID ? '900' : '800',
+    fontSize: IS_ANDROID ? resText(14) : resText(12),
   },
   cardContainer: {
     marginTop: resPixel(20),
   },
   sectionTwo: {
     color: '#9B9898',
-    fontWeight: '900',
-    fontStyle: 'normal',
     fontFamily: 'Avenir',
-    fontSize: resText(12),
     marginTop: resPixel(25),
     lineHeight: resText(19),
+    fontWeight: IS_ANDROID ? '900' : '800',
+    fontSize: IS_ANDROID ? resText(14) : resText(12),
   },
   listContainer: {
     flex: 1,

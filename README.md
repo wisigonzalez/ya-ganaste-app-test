@@ -27,6 +27,7 @@ Mandatory
 If you wish run the project in ios:
 
 1. npm install
+2. cd ios && pod install && cd ..
 2. npm run ios
 3. see the magic
 
@@ -63,16 +64,20 @@ Explanation of hierarchies in files and layers.
 
 - `main` >>> All features
 - `feature/create-application-and-initial-view` >>> initial configurations and layouts with tests.
+- `enhancement/get-data` >>> get data form API or local storage.
 
 ## Other details
 
 - Layouts
   - BANKS
-    - 
+    - [IOS](https://drive.google.com/file/d/1BjO7Dx41souYvpYcCzRVqlYnv7wN4mCM/view?usp=sharing)
+    - [ANDROID](https://drive.google.com/file/d/10cGRTUJRsUTv4weNlWs2puhV4VUjPj3M/view?usp=sharing)
   - BANKS DETAILS
-    - 
-  - GENERAL VIDEO
-    - 
+    - [IOS](https://drive.google.com/file/d/12E7V71Due5F2g24ZLmbXfAtTK8fgwEML/view?usp=sharing)
+    - [ANDROID](https://drive.google.com/file/d/1LFk2_JcVhvhqB0AUmOXrkbPnpFD4J7Ea/view?usp=sharing)
+- General video
+    - [IOS](https://drive.google.com/file/d/10bAmhaHB0bGlL19p9-zzqthvtBZjrPma/view?usp=sharing)
+    - [ANDROID](https://drive.google.com/file/d/1VevD05jQEia7GBy40F1DOLf3LKvNX8g0/view?usp=sharing)
 # License
 
 MIT
