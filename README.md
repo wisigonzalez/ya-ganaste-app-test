@@ -28,14 +28,15 @@ If you wish run the project in ios:
 
 1. npm install
 2. cd ios && pod install && cd ..
-2. npm run ios
-3. see the magic
+3. npm run ios
+4. see the magic
 
 If you wish run the project in android:
 
 1. npm install
-2. npm run android
-3. see the magic
+2. go to android folder and create the file local.properties with next line `sdk.dir=$HOME/Library/Android/sdk`
+3. npm run android
+4. see the magic
 
 If you wish run the test, then:
 
@@ -65,6 +66,7 @@ Explanation of hierarchies in files and layers.
 - `main` >>> All features
 - `feature/create-application-and-initial-view` >>> initial configurations and layouts with tests.
 - `enhancement/get-data` >>> get data form API or local storage.
+- `bugfix/readme` >>> bugfix readme file.
 
 ## Other details
 
