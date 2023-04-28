@@ -19,12 +19,18 @@ const mockData = [
 ];
 describe('useGetAllBanks hook', () => {
   it('should fetch all banks', async () => {
-    const {result, waitForNextUpdate} = renderHook(() => useGetAllBanks());
+    const {result, waitForNextUpdate} = renderHook(() => useGetAllBanks(false));
 
     await waitForNextUpdate();
 
     await waitFor(() => {
       expect(result.current.data).toEqual(mockData);
     });
+  });
+
+  it('should not fetch all banks', () => {
+    const {result} = renderHook(() => useGetAllBanks(true));
+
+    expect(result.current.data).toEqual([]);
   });
 });

@@ -27,6 +27,7 @@ Mandatory
 If you wish run the project in ios:
 
 1. npm install
+2. cd ios && pod install && cd ..
 2. npm run ios
 3. see the magic
 
