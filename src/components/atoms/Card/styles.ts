@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+import {IS_ANDROID} from '../../../constants';
 import {resPixel, resText} from '../../../utils';
 
 export const CardStyles = StyleSheet.create({
@@ -21,24 +22,22 @@ export const CardStyles = StyleSheet.create({
     backgroundColor: '#334FFA',
   },
   title: {
-    fontWeight: '900',
     color: Colors.white,
-    fontStyle: 'normal',
     fontFamily: 'Avenir',
-    fontSize: resText(13),
     marginTop: resPixel(21),
     lineHeight: resText(22),
     marginLeft: resPixel(19),
+    fontWeight: IS_ANDROID ? '900' : '800',
+    fontSize: IS_ANDROID ? resText(15) : resText(13),
   },
   value: {
     fontWeight: '900',
     color: Colors.white,
     alignSelf: 'center',
-    fontStyle: 'normal',
     fontFamily: 'Avenir',
-    fontSize: resText(26),
     marginTop: resPixel(7),
     minWidth: resPixel(191),
     lineHeight: resText(44),
+    fontSize: IS_ANDROID ? resText(29) : resText(26),
   },
 });

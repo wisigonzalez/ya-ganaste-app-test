@@ -28,7 +28,7 @@ const BanksDetails: FC<BanksDetailsProps> = ({navigation, bank}) => {
           <Text style={styles.usersText}>
             {numberFormatter(usersGenerator(), 0)}
           </Text>
-          <Text style={styles.sectionTwo}>Description:</Text>
+          <Text style={styles.sectionTwo}>Descripción:</Text>
           <Text style={styles.descriptionText}>
             Con {age} años, {description}
           </Text>

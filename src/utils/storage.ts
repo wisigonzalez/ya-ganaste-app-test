@@ -2,7 +2,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export async function setKey(key: string, value: string): Promise<void> {
   try {
-    console.log('*** GUARDANDO LA KEY ***', key, value);
     await AsyncStorage.setItem(key, value);
   } catch (error) {
     console.error('Error al guardar la key en AsyncStorage:', error);

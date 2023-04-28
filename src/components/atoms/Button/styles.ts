@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+import {IS_ANDROID} from '../../../constants';
 import {resPixel, resText} from '../../../utils';
 
 export const ButtonStyles = StyleSheet.create({
@@ -14,9 +15,8 @@ export const ButtonStyles = StyleSheet.create({
     fontWeight: '900',
     color: Colors.white,
     textAlign: 'center',
-    fontStyle: 'normal',
     fontFamily: 'Avenir',
-    fontSize: resText(14),
     lineHeight: resText(22),
+    fontSize: IS_ANDROID ? resText(16) : resText(14),
   },
 });

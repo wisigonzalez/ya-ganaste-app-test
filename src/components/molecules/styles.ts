@@ -1,6 +1,8 @@
 import {StyleSheet} from 'react-native';
 
+import {IS_ANDROID} from '../../constants';
 import {resPixel, resText} from '../../utils';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 export const ListItemStyles = StyleSheet.create({
   container: {
@@ -19,27 +21,27 @@ export const ListItemStyles = StyleSheet.create({
     flexDirection: 'row',
   },
   title: {
-    fontWeight: '900',
-    fontStyle: 'normal',
+    color: Colors.black,
     fontFamily: 'Avenir',
-    fontSize: resText(12),
     lineHeight: resText(19),
+    fontWeight: IS_ANDROID ? '900' : '800',
+    fontSize: IS_ANDROID ? resText(14) : resText(12),
   },
   date: {
-    fontWeight: '400',
-    fontStyle: 'normal',
+    color: Colors.black,
     fontFamily: 'Avenir',
-    fontSize: resText(10),
-    marginTop: resPixel(10),
     lineHeight: resText(16),
+    fontWeight: IS_ANDROID ? '500' : '400',
+    fontSize: IS_ANDROID ? resText(12) : resText(10),
+    marginTop: IS_ANDROID ? resPixel(13) : resPixel(10),
   },
   arrow: {
-    fontWeight: '900',
-    fontStyle: 'normal',
+    color: Colors.black,
     fontFamily: 'Avenir',
-    fontSize: resText(14),
     marginTop: resPixel(2),
     lineHeight: resText(19),
     marginLeft: resPixel(20),
+    fontWeight: IS_ANDROID ? '900' : '800',
+    fontSize: IS_ANDROID ? resText(19) : resText(14),
   },
 });
